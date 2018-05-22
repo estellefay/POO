@@ -9,3 +9,11 @@ header {
 footer {
     background-color: cornflowerblue;
 }
+
+.question {
+    color: blue;
+}
+
+.dead {
+    color: red;
+}

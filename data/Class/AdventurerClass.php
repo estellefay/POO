@@ -12,7 +12,7 @@ class AdventurerClass
         // On dois assigner à la proprieter nama la valeur $name
         $this->name = $name;
     }
-    
+        
     protected function setMp($mp)
     {
         return $this->mp = $mp;
