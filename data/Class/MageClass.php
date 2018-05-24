@@ -1,11 +1,11 @@
 <?php 
-require_once('./Class/AdventurerClass.php');
+
 
 class MageClass extends AdventurerClass
 {
-    function __construct($name, $hp, $mp)
+    function __construct($name, $hp, $mp, $status = false)
     {
-        parent ::__construct($name);
+        parent ::__construct($name, $status);
         $this->hp = $hp;
         $this->mp = $mp;
     }
@@ -19,7 +19,7 @@ class MageClass extends AdventurerClass
                 $enemy->receiveDamage($dmg);
                 $this->mp = $this->mp - $useMp;               
             } else {
-                echo"Tu n'as plus de point de vie";
+                echo"Tu n'as plus de point de magie";
             }
 
 

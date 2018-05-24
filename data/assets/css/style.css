@@ -1,0 +1,51 @@
+body {
+    background-color: #E9E7D5;
+}
+
+
+
+.question {
+    color: blue;
+}
+
+.dead {
+    color: red;
+}
+
+[data-view="fight-screen"] {
+    color: #163143;
+    display: flex;
+    justify-content: space-around;
+}
+
+[data-view="number-tour"] {
+
+    color: #163143;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-no-style {
+    list-style: none;
+}
+
+.hero>ul {
+    padding: 0;
+}
+
+.foe>ul {
+    padding: 0;
+}
+
+.hero {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #3FD8C9;
+    margin: 0;
+}
+
+.foe {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #D4273E;
+}

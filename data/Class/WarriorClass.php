@@ -1,11 +1,11 @@
 <?php 
-require_once('./Class/AdventurerClass.php');
+
 
 class WarriorClass extends AdventurerClass 
 {
-    function __construct($name, $hp, $mp)
+    function __construct($name, $hp, $mp, $status = false)
     {
-        parent ::__construct($name);
+        parent ::__construct($name, $status);
         $this->hp = $hp;
         $this->mp = $mp;
     }

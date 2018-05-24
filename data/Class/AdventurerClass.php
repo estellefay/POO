@@ -1,16 +1,20 @@
 <?php
 
 
-class AdventurerClass 
+abstract class AdventurerClass #abstract j'interdit d'instentier directement la class
 {
     public $name;
     public $hp;
     public $mp;
+    public $status = "hero";
     
-    function __construct($name)  
+    function __construct($name, $status)  
     {
         // On dois assigner à la proprieter nama la valeur $name
         $this->name = $name;
+        if ($status) {
+            $this->status = $status;
+        }
     }
         
     protected function setMp($mp)
